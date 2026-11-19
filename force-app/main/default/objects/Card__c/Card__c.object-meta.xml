@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Card object records an Ascend Bank debit or credit card held by a customer. It stores Last 4 Digits (required, four digits only), Card Type (Debit or Credit), and Status (Active or Blocked). Commonly used to block a lost or stolen card.</description>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <label>Card</label>
+    <nameField>
+        <displayFormat>CARD-{0000}</displayFormat>
+        <label>Card Number</label>
+        <startingNumber>1</startingNumber>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Cards</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

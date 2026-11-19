@@ -1,0 +1,35 @@
+{
+  "required" : [ "contactId", "summary" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "cardType" : {
+      "title" : "Card Type",
+      "description" : "Debit or Credit, when known.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contactId" : {
+      "title" : "Contact Id",
+      "description" : "Verified Contact Id.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "last4" : {
+      "title" : "Last 4",
+      "description" : "Last 4 digits of the card, when known.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "summary" : {
+      "title" : "Summary",
+      "description" : "Short summary of what the customer said about the unrecognised transaction.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

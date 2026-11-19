@@ -1,0 +1,35 @@
+{
+  "required" : [ "contactId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "cardType" : {
+      "title" : "Card Type",
+      "description" : "Debit or Credit. Omit only when the last 4 digits identify one card.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "contactId" : {
+      "title" : "Contact Id",
+      "description" : "Verified Contact Id.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "last4" : {
+      "title" : "Last 4",
+      "description" : "Last 4 digits of the card to block. Omit only when the card type identifies one card.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "unrecognisedTransactionSummary" : {
+      "title" : "Unrecognised Transaction Summary",
+      "description" : "The customer's own short description of an unrecognised transaction. Leave empty when they did not report one.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

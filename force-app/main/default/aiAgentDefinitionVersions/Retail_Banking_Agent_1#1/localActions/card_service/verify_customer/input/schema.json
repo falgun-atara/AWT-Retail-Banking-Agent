@@ -1,0 +1,28 @@
+{
+  "required" : [ "email", "dateOfBirth" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "dateOfBirth" : {
+      "title" : "Date Of Birth",
+      "description" : "Date of birth the customer gives, such as 1988-11-03 or 3 November 1988.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "email" : {
+      "title" : "Email",
+      "description" : "Email address the customer says is registered on the account.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "priorFailedAttempts" : {
+      "title" : "Prior Failed Attempts",
+      "description" : "How many failed verification attempts have already happened in this conversation.",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}
